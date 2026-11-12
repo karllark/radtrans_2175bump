@@ -110,7 +110,7 @@ if __name__ == "__main__":
         ax.plot(1/x, fm90_fit(x), color="black", label="FM90 fit")
 
     # Set up the backend to save the samples for the emcee runs
-    emcee_samples_file = f"{args.redstar}_{args.compstar}_emcee_samples.h5"
+    emcee_samples_file = f"LMCext/{args.redstar}_{args.compstar}_alav_emcee_samples.h5"
 
     nsteps = args.nsteps
     fit3 = EmceeFitter(
